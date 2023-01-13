@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Amazon Checkout</title>
+</head>
+
+<body>
+    <form action="#">
+        <div class="container">
+            <div class="details">
+                <div class="address">
+                    <div class="formgroup">
+                        <label for="Address" id="addressLabel">Address:
+                        </label>
+                        <input type="text" placeholder="Address" size="30px" maxlength="100" id="AddressLabel">
+                    </div>
+                    <div class="formgroup">
+                        <label for="Post-Code" id="postcodeLabel">Post-code:</label>
+
+                        <input type="number" placeholder="Post-Code" size="30px" maxlength="6">
+                    </div>
+                    <div class="formgroup">
+                        <label for="City" id="cityLabel">City:</label>
+                        <input type="text" placeholder="City" size="30px" maxlength="15">
+                    </div>
+                </div>
+                <div class="shipping">
+                    <p>Choose Your Shipping Method:-</p>
+                    <select name="ShippingMenu" id="ShippingMenu" >
+                        <option value="Select">--Select--</option>
+                        <option value="cod">Cash On Delivery</option>
+                        <option value="cod">Super Saver Delivery @ Rs40</option>
+                        <option value="cod">LightSpeed Delivery @ Rs70</option>
+                    </select>
+                </div>
+                <div class="Payment">
+                    <div class="PaymentHead">
+                        <p>Select Your Payment Option:-</p>
+                    </div>
+                    <div class="paymentoptions">
+                        <label for="credit_card">Credit Card
+                            <input type="radio" name="payment" value="CreditCard"></label>
+                        <label for="debit_card">Debit Card
+                            <input type="radio" name="payment" value="DebitCard"></label>
+                        <label for="net_banking">Net-Banking
+                            <input type="radio" name="payment" value="NetBanking">
+                        </label>
+                    </div>
+                </div>
+                <div class="notification">
+                    <div class="payment_details">
+                        <label for="paymentDetails">Securely save my payment details <input type="checkbox"></label>
+                    </div>
+                    <div class="email_updates">
+                        <label for="emailUpdates">Sign me up for email updates <input type="checkbox"></label>
+                    </div>
+                </div>
+            </div>
+            <div class="comments">
+                <label for="comments">Comments:-</label>
+                <textarea name="Comments" id="Comments" cols="40" rows="4"></textarea>
+            </div>
+        </div>
+        <div class="submit">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+
+</body>
+
+</html>
+

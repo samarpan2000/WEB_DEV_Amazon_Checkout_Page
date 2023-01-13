@@ -1,0 +1,180 @@
+* {
+    box-sizing: border-box;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 10px;
+    font-size: 24px;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 1em;
+}
+
+.details {
+    /* background-color: rgb(227, 209, 71); */
+    flex: 3;
+}
+
+.address {
+    /* background-color: aquamarine; */
+}
+
+.formgroup {
+    display: flex;
+    margin: 1em;
+}
+
+.formgroup label {
+    flex: 1;
+    text-align: right;
+    margin-right: 1em;
+}
+
+.formgroup input {
+    flex: 3;
+    font-size: 1em;
+}
+
+.shipping {
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.shipping h3 {
+    font-size: 22px;
+}
+
+.shipping select {
+    width: 40%;
+    font-size: 18px;
+}
+
+.Payment {
+    text-align: center;
+}
+
+.paymentoptions {
+    display: flex;
+}
+
+.Payment .paymentoptions label {
+    flex: 1;
+
+
+}
+
+.notification {
+    display: flex;
+    margin: 25px;
+    font-size: 25px;
+
+}
+
+.payment_details {
+    /* background-color: aquamarine; */
+    flex: 1;
+    text-align: left;
+
+}
+
+.email_updates {
+    /* background-color: blueviolet; */
+    flex: 1;
+    text-align: right;
+}
+
+.comments {
+    /* background-color: violet; */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+}
+
+.comments textarea {
+    flex: 1;
+}
+
+input,
+textarea,
+select {
+    background-color: lightgreen;
+    border-radius: 10px;
+    border-top: 2.5px solid grey;
+    border-left: 2.5px solid grey;
+}
+
+.submit {
+    /* background-color: rgb(135, 183, 250); */
+    margin-top: auto;
+
+}
+
+.submit input {
+    background-color: rgb(0, 183, 255);
+    border-radius: 9px;
+    color: white;
+    width: 100%;
+    font-size: 30px;
+    transition: font-size 1s;
+}
+
+.submit input:hover {
+    cursor: pointer;
+    background-color: blueviolet;
+    font-size: 35px;
+}
+
+@media screen and (max-width:768px) {
+
+    .submit{
+        width: 100%;
+    }
+
+    .container,.formgroup,.shipping,.Payment,.paymentoptions,.PaymentHead,.notification,.shipping,#ShippingMenu{
+        display: block;
+        margin-left: 0;
+        font-size: 16px;
+        font-weight: 500;
+        width: 100%;
+        text-align: left;
+   
+}
+.formgroup input{
+    width:100%;
+    
+}
+.PaymentHead {
+    text-align: left;
+
+}
+.paymentoptions{
+    text-align: left;
+}
+.notification .email_updates,.payment_details{
+    text-align: left;
+    margin-top:10px;
+}
+
+.comments{
+    width: 100%;
+    margin-left: 0;
+}
+
+}
